@@ -1,0 +1,25 @@
+{
+  "name": "quotes-photos-generator",
+  "version": "1.0.0",
+  "description": "Generator of Photos with Quotes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Windows87/quotes-photos-generator.git"
+  },
+  "author": "Yuri Faria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Windows87/quotes-photos-generator/issues"
+  },
+  "homepage": "https://github.com/Windows87/quotes-photos-generator#readme",
+  "dependencies": {
+    "puppeteer": "^1.19.0"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
