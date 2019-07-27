@@ -3,8 +3,8 @@ const pathM = require('path');
 const puppeteer = require('puppeteer');
 
 class QuotesPhotosGenerator {
-  async start({ imageUrl, color, quote, specialWords = [], font = 'Russo One', author = '', path = './image.png', blur = 0, backgroundColorActivate = true, width = 720, height = 1280 }) {
-    return new Promise(next => {
+  start({ imageUrl, color, quote, specialWords = [], font = 'Russo One', author = '', path = './image.png', blur = 0, backgroundColorActivate = true, width = 720, height = 1280 }) {
+    return new Promise(async next => {
       const htmlCode = this.createHTMLCode({ imageUrl, color, quote, specialWords, font, author, backgroundColorActivate, blur });
       this.writeHTMLCode({ htmlCode, path });
       await this.saveImage({ path, height, width });
