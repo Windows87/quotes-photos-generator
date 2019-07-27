@@ -111,7 +111,7 @@ class QuotesPhotosGenerator {
   }
 
   writeHTMLCode({ htmlCode, path }) {
-    fs.writeFileSync(`${path}.html`, htmlCode);
+    fs.writeFileSync(`${pathM.join(__dirname, path)}.html`, htmlCode);
   }
 
   async saveImage({ path, width, height }) {
@@ -126,7 +126,7 @@ class QuotesPhotosGenerator {
   }
 
   removeHTMLCode({ path }) {
-    fs.unlinkSync(`${path}.html`);
+    fs.unlinkSync(`${pathM.join(__dirname, path)}.html`);
   }
 
   createQuoteSpanHTML({ quote, specialWords }) {
