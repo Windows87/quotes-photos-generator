@@ -111,7 +111,7 @@ class QuotesPhotosGenerator {
   }
 
   writeHTMLCode({ htmlCode, path }) {
-    fs.writeFileSync(`${pathM.join(__dirname, path)}.html`, htmlCode);
+    fs.writeFileSync(`${pathM.join(__dirname, `../../${path}`)}.html`, htmlCode);
   }
 
   async saveImage({ path, width, height }) {
@@ -120,13 +120,13 @@ class QuotesPhotosGenerator {
     });
     const page = await browser.newPage();
     await page.setViewport({ width, height });
-    await page.goto(`file://${pathM.join(__dirname, path)}.html`);            
+    await page.goto(`file://${pathM.join(__dirname, `../../${path}`)}.html`);            
     await page.screenshot({ path });
     await browser.close();
   }
 
   removeHTMLCode({ path }) {
-    fs.unlinkSync(`${pathM.join(__dirname, path)}.html`);
+    fs.unlinkSync(`${pathM.join(__dirname, `../../${path}`)}.html`);
   }
 
   createQuoteSpanHTML({ quote, specialWords }) {
