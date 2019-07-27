@@ -1,6 +1,6 @@
 {
   "name": "quotes-photos-generator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generator of Photos with Quotes",
   "main": "index.js",
   "scripts": {
