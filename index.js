@@ -72,7 +72,8 @@ class QuotesPhotosGenerator {
             .content span {
               color: white;
               font-family: ${font};
-              font-size: 50px;
+              font-size: 45px;
+              text-align: center;
             }
 
             .content span .specialWord {
@@ -82,7 +83,7 @@ class QuotesPhotosGenerator {
             .content .author {
               color: #${color};
               font-family: ${font};
-              font-size: 45px;
+              font-size: 38px;
               position: absolute;
               bottom: 8px;
               width: 100%;
