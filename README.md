@@ -49,4 +49,4 @@ start();
 
 ### Example Result
 
-![Result](https://i.imgsafe.org/bb/bb4afbba1c.png)
+![Result](https://github.com/Windows87/quotes-photos-generator/blob/master/my-quote.png)
